@@ -1,0 +1,138 @@
+# TryHack3M: Bricks Heist — Lab Report
+
+> **Platform:** TryHackMe
+> **Room:** [TryHack3M: Bricks Heist](https://tryhackme.com/room/tryhack3mbricksheist)
+> **Status:** Completed — personal notes reconstructed from memory
+> **Date:** 27-10-2026
+
+## 1. Executive Summary
+
+TryHack3M: Bricks Heist is a cybersecurity lab focused on investigating a compromised web server, identifying suspicious activity, and analysing artefacts associated with a cryptocurrency-mining incident.
+
+My first remembered action was network reconnaissance using Nmap. The investigation also involves examining the web application, suspicious processes and services, log files, and cryptocurrency-related indicators.
+
+This report is a reconstruction of my lab experience. Details that I cannot currently recall have been marked as unverified rather than guessed.
+
+## 2. Objectives
+
+- Perform network reconnaissance using Nmap.
+- Investigate the exposed web application.
+- Identify evidence of suspicious host activity.
+- Examine relevant files, processes, services, and logs.
+- Investigate cryptocurrency-related indicators.
+- Understand defensive measures that can reduce the likelihood and impact of similar incidents.
+
+## 3. Tools Used
+
+| Tool                          | Purpose                                  |
+| ----------------------------- | ---------------------------------------- |
+| Nmap                          | Network and service enumeration          |
+| Web browser                   | Web application investigation            |
+| Linux command-line utilities  | Host and artefact investigation          |
+| Threat-intelligence resources | Researching indicators, where applicable |
+
+*Note: Nmap is the first tool I remember using. The other tools should be retained in this list only if confirmed against my actual lab session.*
+
+## 4. Methodology
+
+### 4.1 Network Reconnaissance
+
+I began by scanning the target with Nmap to identify exposed ports and services.
+
+**Command used:** Not currently recalled.
+
+**Observed open ports and services:** Not currently recalled.
+
+The scan results would provide the initial attack surface for further investigation. The exact output must be verified against my own evidence before publication.
+
+### 4.2 Web Application Investigation
+
+The next investigation stage involved examining the web-facing attack surface.
+
+Items to document:
+
+- Web server and application technologies.
+- Relevant software versions.
+- Directories and endpoints discovered.
+- Vulnerability identified.
+- Evidence supporting the initial-access method.
+
+**Exact enumeration commands and exploitation steps:** Not currently recalled.
+
+No specific vulnerability or exploit chain is claimed in this report without supporting evidence.
+
+### 4.3 Host Investigation
+
+The room's investigation focuses on suspicious host activity and artefacts associated with a cryptocurrency-mining incident.
+
+The following details should be documented from verified observations:
+
+| Area                  | Evidence to record                              |
+| --------------------- | ----------------------------------------------- |
+| Hidden web artefact   | File location and significance                  |
+| Suspicious process    | Process name and relevant observations          |
+| Associated service    | Service name and relationship to the process    |
+| Miner log             | Log location and relevant entries               |
+| Cryptocurrency wallet | Indicator location and validation method        |
+| Threat intelligence   | Sources consulted and confidence in conclusions |
+
+**Specific filenames, process names, wallet indicators, and results:** Not currently recalled.
+
+### 4.4 Evidence Correlation
+
+Individual indicators should not be treated as proof of compromise in isolation. A reliable investigation correlates process information, service configuration, timestamps, logs, and network observations.
+
+For this lab, the exact evidence and conclusions remain to be reconstructed.
+
+## 5. Findings
+
+The following table separates confirmed recollections from information that still needs verification.
+
+| Finding                                    | Status                    |
+| ------------------------------------------ | ------------------------- |
+| Nmap was used for initial reconnaissance   | Recalled                  |
+| Target ports and services                  | Unverified                |
+| Specific web vulnerability                 | Unverified                |
+| Suspicious process and associated service  | Unverified                |
+| Cryptocurrency-mining artefacts            | To document from evidence |
+| Wallet and threat-intelligence association | Unverified                |
+
+## 6. Defensive Recommendations
+
+The following recommendations are relevant to investigations of compromised web servers. They should be connected to specific lab findings once those findings are verified.
+
+1. **Patch management:** Keep web applications, plugins, themes, and server components updated.
+2. **Least privilege:** Restrict service accounts and administrative permissions.
+3. **Process monitoring:** Investigate unexpected child processes, shell execution, and unusual outbound connections from web-server processes.
+4. **Persistence detection:** Review unfamiliar services, scheduled tasks, and startup mechanisms.
+5. **Centralised logging:** Preserve application, authentication, process, and network logs for incident investigation.
+6. **Threat intelligence:** Correlate suspicious indicators with reputable sources and record uncertainty.
+7. **Incident response:** Rotate exposed credentials and restore affected systems from trusted sources when system integrity cannot be established.
+
+## 7. Lessons Learned
+
+Complete these reflections after reviewing the lab again or recovering additional notes.
+
+- Most useful clue: TODO
+- Most useful tool: TODO
+- Main technical challenge: TODO
+- Evidence that changed my assessment: TODO
+- What I would do differently next time: TODO
+- Skills to practise further: TODO
+
+## 8. Conclusion
+
+This lab provides an opportunity to practise reconnaissance and investigate evidence associated with a potentially compromised web server. The most important lesson is to correlate technical artefacts before drawing conclusions and to distinguish observed evidence from assumptions.
+
+This report deliberately leaves unrecalled technical details unresolved. It should be updated with verified observations from my own lab session before being presented as a complete technical walkthrough.
+
+## 9. References
+
+- [TryHackMe — TryHack3M: Bricks Heist](https://tryhackme.com/room/tryhack3mbricksheist)
+
+## 10. Publication Checklist
+
+- [ ] Verify commands and results against my own notes.
+- [ ] Confirm all findings before making definitive claims.
+- [ ] Remove credentials, secrets, and flags from public material unless publication is explicitly permitted.
+- [ ] Check the room's current status and TryHackMe's current publication rules before publishing a detailed walkthrough.
